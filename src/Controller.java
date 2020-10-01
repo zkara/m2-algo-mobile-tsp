@@ -72,7 +72,8 @@ public class Controller implements CommandListener, BackgroundPainter {
 
         // TODO: call TSP algorithms here
         
-        NearestNeighbor algorithm = new NearestNeighbor();
+        //NearestNeighbor algorithm = new NearestNeighbor();
+        TowApprox algorithm = new TowApprox();
         algorithm.setPoints(points);
         List<Point> itinerary = algorithm.getItinerary();
 
